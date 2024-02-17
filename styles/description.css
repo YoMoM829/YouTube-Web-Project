@@ -1,0 +1,28 @@
+.main-video-description {
+    background-color: rgb(37, 36, 36);
+    flex: 1;
+    max-width: 100%;
+    max-height: 75px;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 15px;
+    font-size: 14px;
+}
+
+.description-stats, .description-more {
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.description-info {
+    margin-top: 3px;
+}
+
+.description-expansion {
+    margin-top: 20px;
+}
+
+.description-link {
+    color: rgb(62, 166, 255);
+}

@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    background-color: black;
+    height: 56px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-style: none;
+    z-index: 5;
+}
+
+.left-section {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.hamburger-menu {
+    height: 25px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.youtube-logo-div {
+    position: relative;
+}
+
+.youtube-logo-country {
+    position: absolute;
+    color: rgb(191, 181, 181);
+    text-decoration: none;
+    top: 0;
+    right: -15px;
+    font-size: 10px;
+}
+
+.youtube-logo{
+    height: 30px;
+    margin-top: 0;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    margin-left: 475px;
+    max-width: 650px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.search-bar {
+    padding-left: 15px;
+    background-color: black;
+    height: 35px;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: rgb(87, 81, 81);
+    border-radius: 20px;
+    flex: 1;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.search-icon {
+    margin-top: 0;
+    height: 23px;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.search-button{
+    background-color: rgb(37, 36, 36);
+    height: 39px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: rgb(87, 81, 81);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+}
+
+.voice {
+    background-color: rgb(23, 22, 22);
+    border-radius: 25px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 9px;
+    padding-left: 7px;
+}
+
+.voice-icon {
+    height: 25px;
+    border-radius: 25px;
+}
+
+.right-section {
+    display: flex;
+    margin-left: 450px;
+    align-items: center;
+    width: 150px;
+    margin-right: 40px;
+    justify-content: space-between;
+}
+
+.upload-icon {
+    height: 25px;
+}
+
+.notification-icon {
+    height: 35px;
+}
+
+.my-channel {
+    height: 35px;
+    border-radius: 20px;
+}

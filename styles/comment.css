@@ -1,0 +1,153 @@
+.comment-section {
+    max-width: 100%;
+    flex: 1;
+    color: white;
+}
+
+.comment-section-header {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    margin-top: 10px;
+    font-family: Roboto, Arial;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment-section-sort {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+}
+
+.comment-section-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    flex: 1;
+}
+
+.comment-section-add {
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: black;
+}
+
+.comment-section-profile {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.comment-section-search-bar {
+    display: flex;
+    width: 100%;
+    row-gap: 5px;
+    border-style: none; 
+    flex-direction: column;
+    height: 50px;
+    margin:0;
+    background-color: black;
+}
+
+.comment-section-searchbar::placeholder {
+    color: rgb(150, 148, 148);
+    background-color: black;
+}
+
+.comment-section-line {
+    margin:0;
+    border-color: rgba(37, 36, 36, 0.5);
+    width: 100%;
+    background-color: rgb(37, 36, 36);
+}
+
+.comment-section-comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 16px;
+}
+
+.comment-section-comment {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.comment-section-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.comment-section-title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.comment-section-author, .comment-section-time {
+    font-size: 13px;
+}
+
+.comment-section-author {
+    font-weight: bold;
+}
+
+.comment-section-time {
+    color: rgb(173, 168, 168);
+}
+
+.comment-section-text {
+    font-size: 14px;
+}
+
+.comment-section-buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.comment-section-likes, .comment-section-reply {
+    font-size: 13px;
+}
+
+.comment-section-likes {
+    color: rgb(173, 168, 168);
+}
+
+.comment-section-dislike {
+    margin-right: 15px;
+}
+
+.comment-section-reply-button {
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: black;
+    text-align: center;
+    
+}
+
+.comment-section-reply-button:hover {
+    background-color: rgb(46, 40, 40);
+    transition: background-color 0.15s;
+}
+
+.comment-section-view-replies {
+    margin: 0;
+    color: rgb(62, 166, 255);
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anand's Video clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video-sidebar.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/description.css">
+        <link rel="stylesheet" href="styles/comment.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <img  class="hamburger-menu" src="icons/hamburger-menu.png">
+                <a href="https://www.youtube.com/?gl=AU">
+                    <div class="youtube-logo-div">
+                        <img class="youtube-logo" src="icons/youtube-logo.png">
+                        <p class="youtube-logo-country">AU</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="middle-section"> 
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class="search-button">
+                    <img class= "search-icon" src="icons/search.png">
+                    <div class="tooltip">Search</div>
+                </button>
+
+                <button class="voice">
+                    <img  class="voice-icon" src="icons/voice.png">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <a href="https://studio.youtube.com/channel/UCcu580Su8BUEbNx986L3jFg/videos/upload?d=ud&filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D">
+                        <img class="upload-icon" src="icons/upload.png">
+                    </a>
+                    <div class="tooltip">Create</div>
+                </div>
+                
+                <div class="notifications-icon-container">
+                    <img class="notification-icon" src="icons/notifications.png">
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="my-channel" src="pfp/pfp.jpg">
+            </div>
+        </div>
+        <div class="container">
+            <div class="main-video">
+                <iframe class="video-display" src="https://www.youtube.com/embed/n2RNcPRtAiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="main-video-info">
+                    <p class="main-video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <div class="main-video-buttons">
+                        <div class="main-video-left-section">
+                            <img class="main-video-pfp" src="pfp/main-video-pfp.jpg">
+                            <div class="main-video-pfp-info">
+                                <p class="main-video-author">Marques Brownlee</p>
+                                <p class="main-video-stats">17.1M subscribers</p>
+                            </div>
+                            <button class="main-video-join">Join</button>
+                            <button class="main-video-subscribe">
+                                <img class="main-video-subscribe-button" src="icons/notifications.png">
+                                <p class="main-video-subscribe-info">Subscribed</p>
+                            </button>
+                        </div>
+                        <div class="main-video-right-section">
+                            <div class="main-video-like-dislike-button">
+                                <img class="main-video-like" src="icons/main-video/like.png">
+                                <p class="main-video-text">203K</p>
+                                <div class="main-video-separator"></div>
+                                <img class="main-video-like" src="icons/main-video/dislike.png">
+                            </div>
+                            <button class="main-video-button">
+                                <img class="main-video-img" src="icons/elipsis-menu/share.png">
+                                <p class="main-video-text">Share</p>
+                            </button>
+                            <button class="main-video-button">
+                                <img class="main-video-img" src="icons/main-video/download.png">
+                                <p class="main-video-text">Download</p>
+                            </button>
+                            <button class="main-video-button">
+                                <img class="main-video-img" src="icons/main-video/thanks.png">
+                                <p class="main-video-text">Thanks</p>
+                            </button>
+                            <button class="main-video-button">
+                                <img class="main-video-img" src="icons/main-video/clip.png">
+                                <p class="main-video-text">Clip</p>
+                            </button>
+                            <button class="main-dot-button">
+                                <img class="main-video-img">
+                                <p class="main-video-text">&#183 &#183 &#183</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-video-description"> 
+                    <p class="description-stats">4.2M views 2 years ago</p>
+                    <p class="description-info">Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!</p>
+                    <p class="description-expansion">MKBHD Merch: <a class="description-link" href="https://mkbhd.com/">http://shop.MKBHD.com</a> <span class="description-more">Show more</span></p>
+                </div>
+                <div class="comment-section">
+                    <div class="comment-section-header">
+                        <p class="comment-section-stats">9,949 Comments</p>
+                        <div class="comment-section-sort">
+                            <img class="comments-section-sort-by" src="icons/main-video/sort.png">
+                            <p class="comment-section-sort">Sort by</p>
+                        </div> 
+                    </div>
+                    <div class="comment-section-body">
+                        <div class="comment-section-add">
+                            <img class="comment-section-profile" src="pfp/pfp.jpg">
+                            <div class="comment-section-search-bar">
+                                <input class="comment-search-content" placeholder="Add a comment">
+                                <hr class="comment-section-line">
+                            </div>
+                        </div>
+                        <div class="comment-section-comments">
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-2.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@excessorizme</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">I wish my backyard chats were this intellectual yet fun</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">9.8K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">33 replies</p>
+                                    </button>
+                                    
+                                </div>
+                                <button class="video-elipsis">&#8942
+                                    <div class="video-elipsis-info">
+                                        <div class="video-elipsis-container">
+                                            <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                            <p class="video-elipsis-info-text">Report</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-3.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@KryonyxGaming</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">It never ceases to amaze me that Marques went from young kid reviewing tech products with no budget to one of the most succcessful tech persona's interviewing CEOs of multi-billion-dollar companies.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">2.4K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">30 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-4.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@mikelockett19</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">I appreciate listening to Sundar speak. You can tell he is highly intelligent, but still communicates technology in a way that is easy to understand.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">1.7K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">46 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-5.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@kelvinkhant6305</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">Such a 
+                                        humble guy. THe way he approaches to convery the message to the audience. Brilliant!
+                                    </p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">1K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">1 reply</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-6.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@svijayrao</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">A lot of CEO's have huge Egos. Nice to see Sundar being humble and down to Earth.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">6.8K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">211 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-7.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@harikrishnaraghuraman3348</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">8:47 I like the way Sundary says "iPhones" and carefully manoeuvre to "our products work across everything". That's what I love about Google. Universal adaptability.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">143</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">33 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-8.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@johanns3142</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">Guys, Marques come a long way, from a teenager making videos in his college dorm, to interviewing CEOs of the worlds, biggest companies! Some of us have been there to see the whole journey!Congrats Marques!</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">7.4K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">35 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-9.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@josethemacho</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">It's safe to say that the CEO know more about Marques than himself</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">2.4K</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">11 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-10.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@tigerr7x</p>
+                                        <p class="comment-section-time">2 years ago</p>
+                                    </div>
+                                    <p class="comment-section-text">This gus is hands-down the Oprah of Tech interviews.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">713</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">5 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                            <div class="comment-section-comment">
+                                <img class="comment-section-profile" src="pfp/pfp-11.jpg">
+                                <div class="comment-section-content">
+                                    <div class="comment-section-title">
+                                        <p class="comment-section-author">@divyansh4735</p>
+                                        <p class="comment-section-time">1 year ago</p>
+                                    </div>
+                                    <p class="comment-section-text">I love how Sundar takes questions head on and answers them in a focused manner.</p>
+                                    <div class="comment-section-buttons">
+                                        <img src="icons/main-video/like.png">
+                                        <p class="comment-section-likes">135</p>
+                                        <img class="comment-section-dislike" src="icons/main-video/dislike.png">
+                                        <p class="comment-section-reply">Reply</p>
+                                    </div>
+                                    <button class="comment-section-reply-button">
+                                        <img src="icons/main-video/down.png">
+                                        <p class="comment-section-view-replies">6 replies</p>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-sidebar">
+                <div class="tags">
+                    <button class="tag">All</button>
+                    <button class="tag">From your search</button>
+                    <button class="tag">From Marques Brownlee</button>
+                </div>
+                <div class="videos">
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=17072s&ab_channel=SuperSimpleDev">
+                                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                                <p class="video-time">6:31:24</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=17072s&ab_channel=SuperSimpleDev">
+                                <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai</p>
+                                <p class="video-author">Marques Brownlee</p>
+                                <p class="video-stats">5.1M views &#183 1 year ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div> 
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=L-tSskyLGRI&t=7s&ab_channel=MoreSidemen">
+                                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                                <p class="video-time">34:02</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=L-tSskyLGRI&t=7s&ab_channel=MoreSidemen">
+                                <p class="video-title">SIDEMEN SHAPESHIFTER AMONG US</p>
+                                <p class="video-author">MoreSidemen</p>
+                                <p class="video-stats">18M views &#183 1 year ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=_gUYVPK6dHQ&t=334s">
+                                <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                                <p class="video-time">41:18</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=_gUYVPK6dHQ&t=334s">
+                                <p class="video-title">SIDEMEN DEAL OR NOT A DEAL</p>
+                                <p class="video-author">Sidemen</p>
+                                <p class="video-stats">1.6M views &#183 8 hours ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=oMY55weHTyY&ab_channel=TheCriticalDrinker">
+                                <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                                <p class="video-time">7:33</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=oMY55weHTyY&ab_channel=TheCriticalDrinker">
+                                <p class="video-title">Extraction 2 - Action Movies are Back!</p>
+                                <p class="video-author">The Critical Drinker</p>
+                                <p class="video-stats">1.6M views &#183 8 hours ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=TENzstSjsus">
+                                <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+                                <p class="video-time">5:20</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=TENzstSjsus">
+                                <p class="video-title">Metro Boomin, James Blake - Hummingbird (Visualiser)</p>
+                                <p class="video-author">Metro Boomin</p>
+                                <p class="video-stats">2.7M views &#183 3 weeks ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=cxKs2b5lRsA">
+                                <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+                                <p class="video-time">3:58</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=cxKs2b5lRsA">
+                                <p class="video-title">Flashing Lights</p>
+                                <p class="video-author">Kanye West</p>
+                                <p class="video-stats">19M views &#183 4 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=dFOErVWlsxg">
+                                <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+                                <p class="video-time">3:59</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=dFOErVWlsxg">
+                                <p class="video-title">STORMZY - BIG FOR YOUR BOOTS</p>
+                                <p class="video-author">Stormzy</p>
+                                <p class="video-stats">75M views &#183 6 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=C7xA8Hzuyac">
+                                <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+                                <p class="video-time">3:22</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=C7xA8Hzuyac">
+                                <p class="video-title">STORMZY - Scary</p>
+                                <p class="video-author">Stormzy</p>
+                                <p class="video-stats">26M views &#183 7 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=f9Pv589uCB0">
+                                <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+                                <p class="video-time">5:20</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=f9Pv589uCB0">
+                                <p class="video-title">Hummingbird</p>
+                                <p class="video-author">Metro Boomin</p>
+                                <p class="video-stats">3.6M views &#183 3 weeks ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=912YaSKGdlo">
+                                <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
+                                <p class="video-time">2:47</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=912YaSKGdlo">
+                                <p class="video-title">STORMZY - STILL DISSAPOINTED</p>
+                                <p class="video-author">Stormzy</p>
+                                <p class="video-stats">22M views &#183 3 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=n3XrvrBVg2k">
+                                <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
+                                <p class="video-time">14:19</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=n3XrvrBVg2k">
+                                <p class="video-title">How Do YouTubers Make Money?</p>
+                                <p class="video-author">Marques Brownlee</p>
+                                <p class="video-stats">2.7M views &#183 1 year ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=eAagtcAup0o">
+                                <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
+                                <p class="video-time">19:38</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=eAagtcAup0o">
+                                <p class="video-title">Talking Tech and The Metaverse with Mark Zuckerberg!</p>
+                                <p class="video-author">Marques Brownlee</p>
+                                <p class="video-stats">3.7M views &#183 2 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=am7Za-5xl7k">
+                                <img class="thumbnail" src="thumbnails/thumbnail-13.webp">
+                                <p class="video-time">7:41</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=am7Za-5xl7k">
+                                <p class="video-title">Naruto - Heavy Violence(Extended)</p>
+                                <p class="video-author">Steveshi Clayxui</p>
+                                <p class="video-stats">1.5M views &#183 11 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=DXGz9fBmf0c&t=136s">
+                                <img class="thumbnail" src="thumbnails/thumbnail-14.webp">
+                                <p class="video-time">16:58</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=DXGz9fBmf0c&t=136s">
+                                <p class="video-title">HOW MANY RAPPERS CAN YOU NAME?</p>
+                                <p class="video-author">MoreSidemen</p>
+                                <p class="video-stats">4.4M views &#183 2 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=P-X-iHTe5PI">
+                                <img class="thumbnail" src="thumbnails/thumbnail-15.webp">
+                                <p class="video-time">4:17</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=P-X-iHTe5PI">
+                                <p class="video-title">Am I Dreaming</p>
+                                <p class="video-author">Metro Boomin</p>
+                                <p class="video-stats">8.4M views &#183 3 weeks ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=ZRhJT2nmvA4">
+                                <img class="thumbnail" src="thumbnails/thumbnail-16.webp">
+                                <p class="video-time">10:52</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=ZRhJT2nmvA4">
+                                <p class="video-title">Marvel's Spider-Man 2 - Gameplay Reveal | PS5 Games</p>
+                                <p class="video-author">Playstation</p>
+                                <p class="video-stats">12M views &#183 1 month ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=8wmCiqVWzi4">
+                                <img class="thumbnail" src="thumbnails/thumbnail-17.webp">
+                                <p class="video-time">44:27</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=8wmCiqVWzi4">
+                                <p class="video-title">Everything GREAT About Spider-Man: No Way Home!</p>
+                                <p class="video-author">CinemaWins</p>
+                                <p class="video-stats">1.2M views &#183 4 weeks ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=-B3oIt9IHNY">
+                                <img class="thumbnail" src="thumbnails/thumbnail-18.webp">
+                                <p class="video-time">22:05</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=-B3oIt9IHNY">
+                                <p class="video-title">SIDEMEN AMONG US: HIDE & SEEK</p>
+                                <p class="video-author">MoreSidemen</p>
+                                <p class="video-stats">5M views &#183 4 months ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=-B3oIt9IHNY">
+                                <img class="thumbnail" src="thumbnails/thumbnail-19.webp">
+                                <p class="video-time">17:40</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=-B3oIt9IHNY">
+                                <p class="video-title">SIDEMEN 5 SECOND CHALLENGE</p>
+                                <p class="video-author">MoreSidemen</p>
+                                <p class="video-stats">5.3M views &#183 3 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=BS3HgiHPYcs">
+                                <img class="thumbnail" src="thumbnails/thumbnail-20.webp">
+                                <p class="video-time">4:40</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=BS3HgiHPYcs">
+                                <p class="video-title">Tion Wayne x Russ Millions - Body</p>
+                                <p class="video-author">GRM Daily</p>
+                                <p class="video-stats">120M views &#183 2 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=9ay3S5brLOA">
+                                <img class="thumbnail" src="thumbnails/thumbnail-21.webp">
+                                <p class="video-time">11:02</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=9ay3S5brLOA">
+                                <p class="video-title">How Ty Became Friends with Arsene Wenger!</p>
+                                <p class="video-author">Happy Hour Podcast</p>
+                                <p class="video-stats">504k views &#183 2 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="sidebar-video">
+                        <div class="thumbnail-row">
+                            <a href="https://www.youtube.com/watch?v=9ClYy0MxsU0">
+                                <img class="thumbnail" src="thumbnails/thumbnail-22.webp">
+                                <p class="video-time">3:25</p>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=9ClYy0MxsU0">
+                                <p class="video-title">STORMZY - VOSSI BOP</p>
+                                <p class="video-author">Stormzy</p>
+                                <p class="video-stats">150M views &#183 4 years ago</p>
+                            </a>
+                        </div>
+                        <button class="video-elipsis">&#8942
+                            <div class="video-elipsis-info">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/queue.png">
+                                    <p class="video-elipsis-info-text">Add to Queue</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save.png">
+                                    <p class="video-elipsis-info-text">Save to Watch Later</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/save-playlist.png">
+                                    <p class="video-elipsis-info-text">Save to playlist</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/download.png">
+                                    <p class="video-elipsis-info-text">Download</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/share.png">
+                                    <p class="video-elipsis-info-text">Share</p>
+                                </div>  
+                                <hr class="video-separator">
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/not.png">
+                                    <p class="video-elipsis-info-text">Not interested</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/dont.png">
+                                    <p class="video-elipsis-info-text">Don't recommend channel</p>
+                                </div>
+                                <div class="video-elipsis-container">
+                                    <img class="video-elipsis-info-icon" src="icons/elipsis-menu/report.png">
+                                    <p class="video-elipsis-info-text">Report</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
