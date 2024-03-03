@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    background-color: black;
+    background-color: #0f0f0f;
     height: 56px;
     position: fixed;
     right: 0;
@@ -8,6 +8,8 @@
     top: 0;
     border-style: none;
     z-index: 5;
+    background-size: 100%;
+    justify-content: space-between;
 }
 
 .left-section {
@@ -16,6 +18,7 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 25px;
+    margin-right: 100px;
 }
 
 .hamburger-menu {
@@ -45,7 +48,6 @@
 .middle-section {
     display: flex;
     align-items: center;
-    margin-left: 475px;
     max-width: 650px;
     flex: 1;
     overflow: hidden;
@@ -53,7 +55,7 @@
 
 .search-bar {
     padding-left: 15px;
-    background-color: black;
+    background-color: #0f0f0f;
     height: 35px;
     border-style: solid;
     border-width: 0.25px;
@@ -62,6 +64,7 @@
     flex: 1;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
+    margin-right: -30px;
 }
 
 .search-bar::placeholder {
@@ -87,8 +90,8 @@
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: -30px;
     margin-right: 10px;
+    margin-left: -30px;
 }
 
 .tooltip {
@@ -97,7 +100,7 @@
 }
 
 .voice {
-    background-color: rgb(23, 22, 22);
+    background-color: rgb(37, 36, 36);
     border-radius: 25px;
     border: none;
     padding-top: 5px;
@@ -113,11 +116,11 @@
 
 .right-section {
     display: flex;
-    margin-left: 450px;
     align-items: center;
     width: 150px;
     margin-right: 40px;
     justify-content: space-between;
+    margin-left: 100px;
 }
 
 .upload-icon {

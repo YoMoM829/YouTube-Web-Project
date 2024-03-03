@@ -1,5 +1,5 @@
 .video-sidebar {
-    background-color: black;
+    background-color: #0f0f0f;
     width: 400px;
     margin-left: 20px;
 }
@@ -7,7 +7,6 @@
 .tags {
     margin-top: 10px;
     width: 400px;
-    background-color: black;
 }
 
 .tag {
@@ -34,7 +33,6 @@
 .sidebar-video {
     display: grid;
     grid-template-columns: 170px 204px 5px;
-    background-color: black;
     column-gap: 5px;
     position: relative;
 }
@@ -43,7 +41,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 8px;
-    background-color: black;
     margin-top: 20px;
 }
 
@@ -112,7 +109,7 @@
     border-radius: 10px;
     padding-left: 7px;
     padding-right: 9px;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
 }
 

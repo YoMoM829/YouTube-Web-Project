@@ -10,6 +10,7 @@ button {
 body {
     font-family: Roboto, Arial;
     margin: 0;
+    background-color: #0f0f0f;
 } 
 
 .container {
